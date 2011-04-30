@@ -14,9 +14,9 @@ from pyroutes import route, application, utils
 from pyroutes.http.response import Response, Redirect
 from pyroutes.template import TemplateRenderer
 
-import importer
+from bounceitbaby import importer
 
-from grapher import file_grapher
+from bounceitbaby.grapher import file_grapher
 
 renderer = TemplateRenderer()
 
