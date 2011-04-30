@@ -9,9 +9,26 @@
 	</head>
 	<body>
 		<form method="post" enctype="multipart/form-data" action="show_graph">
-			<p>
-				<input type="file" name="logfile" /><input type="submit" />
-			</p>
+			<dl>
+				<dt>
+					<label for="logfile">Log file: </label>
+				</dt>
+				<dd>
+					<input id="logfile" type="file" name="logfile" />
+				</dd>
+				<dt>
+					<label for="format">Format: </label>
+				</dt>
+				<dd id="format" t:id="format">
+					<input type="radio" name="format" />
+					<label />
+					<br />
+				</dd>
+				<dt>Submit: </dt>
+				<dd>
+					<input type="submit" />
+				</dd>
+			</dl>
 		</form>
 	</body>
 </html>
